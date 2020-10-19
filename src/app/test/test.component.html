@@ -1,0 +1,29 @@
+<mat-toolbar class="my-toolbar">
+</mat-toolbar>
+
+
+
+<form  [formGroup] = "OptionMode" class="Option-form" >
+<mat-card class="my-card">
+
+  <h3>How do you plan to work today?</h3>
+
+<mat-radio-group class="my-radio" formControlName="option" aria-label="Select an option">
+  <mat-radio-button value="WFH">WFH</mat-radio-button>
+  <mat-radio-button value="Office">Office</mat-radio-button>
+</mat-radio-group>
+
+<br>
+<br>
+<br>
+
+<input class="my-date" formControlName = "date" matInput type="date">
+
+<br>
+<br>
+
+<button type="submit" (click) = "workMode()" mat-raised-button color="primary">Submit</button>
+
+</mat-card>
+</form>
+

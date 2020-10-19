@@ -1,0 +1,96 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<mat-toolbar class="my-toolbar">
+  <span class="logo">
+    <img src ="./assets/images/SurfboardLogo.png" height="4%" width="30%">
+  </span>
+</mat-toolbar>
+
+<div *ngIf="alert"  class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Form Submitted!</h4>
+  <strong>Email confirmation sent!</strong> Kindly wait for approval.
+  <button type="button" (click) = "closeAlert()" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+<mat-card>
+  <!-- Title of an Card -->
+  <mat-card-title>
+      Leave Application
+  </mat-card-title>
+
+
+<mat-card-content>
+
+  <div class="container">
+  <form [formGroup] = "Employeeleaves" class="leave-form">
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Employee ID</mat-label>
+      <input formControlName = "id" id = "id" matInput placeholder="ID">
+    </mat-form-field>
+<br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Employee Name</mat-label>
+      <input formControlName = "name" id = "name" matInput placeholder="Name">
+    </mat-form-field>
+ <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Contact Details</mat-label>
+      <input formControlName = "contact" id = "contact" matInput placeholder="Mobile No.">
+    </mat-form-field>
+<br>
+
+<h3>Leave Duration</h3>
+
+<div class="dates">
+
+    <input formControlName = "from" id="from"
+    type="date">
+
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEX///8AAAD8/PwbGxufn5++vr7l5eUoKChvb294eHiAgID19fUUFBTFxcXOzs5DQ0PQ0NDZ2dmtra1WVla0tLS7u7vd3d3t7e2ZmZmTk5OIiIg0NDRISEhQUFBjY2NmZmYqKio2NjaR0KvhAAACNklEQVR4nO3c204CQRBFUXoUb4ggVy+A+v8/aaJRa3yQp0rJnr1ehaROJiBzuntGI0mSJEmSJEmSJEmSJEmSJEmSJEmSBDXftfY2rZ4i0bh9OK+eI03XGjzi+ithW1SPkmTxnbCtqmfJMf1J2NbVw+S4DRGZ36h3IWG7q54mxThGvK+eJsWaH3EVI26qp0mxiBEvqqdJcR4S3m6rp0nxECKeMSM+hoiXzIhPIeLzpHqaFDch4ltXPU2K6xBxVz1MjqsQcc+8iocQ8cCMuA8RX6qHSdHtQsSr6mlSdLMQ8bp6mhS9iDfV06SYPIeIT9XTpJhchoiP1dOk2Mbq5qF6mhTbsxCR2RRfxKvIbIo3ISG0KZ7HiOPqaVL0alRmUxzr/iE0xfPqaVIMrSlm1qhDa4r5EaE1aq8pZtaosSl+ZUbsNcXMiLEp3jMjvoSIS2aNGsvw5e8/3i8bzKEfcHr8HSen1xR3x19/gmJTPD7+8lMUmuLF8VefpNWAriH/c8j/Lh3A/0OGP3/TEOB/l+LvLeL94YwYEH+Pj+9p8F0bvi/Fd974dQv82hN+/RC/Boxfx8fvxcDvp8HvicLva8PvTcTvL8XvEcbv88bv1eeft8CfmcGfe8KfXcOfP8SfIcWfA8af5cafx8c/U2FYzS/x2SbDan6JAfnPiYqtE7EY7V1C5vPa+M/c+7mGxOb3w9fnkNj8fprTA45Gm0NrM+L6mSRJkiRJkiRJkiRJkiRJkiRJkiRJ/887XiYZxpLQu5cAAAAASUVORK5CYII=" height="50px" width="100px">
+
+
+    <input formControlName = "to" id="to"
+    style="position: relative; left:5px;"
+    type="date">
+
+</div>
+
+  <!--<mat-form-field class="drop-down">
+    <mat-label>Select</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="reason">
+      <mat-option *ngFor = "let reason of reasons" [value]="reason.value" formControlName="reason" id="reason">
+        {{reason.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>-->
+
+<div class="my-reason">
+  <label>Reason/Remarks to address</label>
+  <select name="reason" id="reason" formControlName="reason">
+    <option value="Travel">Travel</option>
+    <option value="Medical">Medical</option>
+    <option value="Others">Others</option>
+  </select>
+</div>
+
+
+
+  </form>
+  </div>
+
+  <mat-card-actions class="my-button">
+    <button mat-raised-button color="primary" (click) = "applyForLeave()">REQUEST</button>
+  </mat-card-actions>
+
+
+</mat-card-content>
+</mat-card>
+

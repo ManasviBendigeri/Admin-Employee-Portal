@@ -1,0 +1,50 @@
+.my-toolbar {
+  background-color: #041C23;
+}
+
+mat-card {
+  height: 80%;
+  width: 40%;
+  margin-left:30%;
+  margin-top: 3%;
+  padding: 2%;
+
+}
+
+
+.my-button {
+  margin-top: 1%;
+  margin-left: 80%;
+}
+
+.my-reason {
+  margin-top: 45px;
+  font-size: large;
+  width: 700px;
+  position: relative;
+  border-radius: 6px;
+}
+
+select {
+  margin-left: 10px;
+  position: relative;
+  top: 5%;
+  width: 30%;
+}
+
+mat-card-title {
+  text-align: center;
+}
+
+h3{
+  font-size: medium;
+  position: relative;
+  top: 20%;
+  text-align: center;
+}
+
+.dates {
+  position: relative;
+  left: 10px;
+  top: 20px;
+}

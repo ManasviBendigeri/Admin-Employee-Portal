@@ -1,0 +1,55 @@
+.my-toolbar {
+  background-color:#041C23;
+}
+
+button {
+  position: absolute;
+  left: 5px;
+  top: 325px;
+  width: 300px;
+}
+
+h2{
+  text-align: center;
+}
+
+h3 {
+  position: relative;
+  left: 165px;
+}
+
+
+.m{
+  position: relative;
+  left: 50px;
+}
+
+table {
+
+  position: absolute;
+  left: 480px;
+  border-spacing: 50px 0;
+  top: 160px;
+
+}
+
+th, td {
+  padding: 0.5px;
+}
+
+.my-text {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: medium;
+	margin: 0 auto;
+  padding: 2%;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 50%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+

@@ -1,0 +1,116 @@
+<body class="body">
+  <div class="title-bar">
+  </div>
+  <h2 style="text-align:center;font-size: 1.5rem;margin-top: 2rem;">EMPLOYEE DETAILS</h2>
+  <div class="container">
+    <form [formGroup]="EmployeeDetails">
+      <table>
+        <th>
+          Personal Details :
+        </th>
+        <tr>
+          <td>
+            <label>Profile Photo</label></td>
+          <td><input type="url" placeholder="Enter Url" formControlName="url" id="url" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <label>Name</label><br /></td>
+          <td><input type="text" placeholder="Enter Name" formControlName="name" id="name" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <label>Email</label><br /></td>
+          <td><input type="email" placeholder="Enter Email" formControlName="email" id="email" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <label>Date of Birth</label><br />
+          </td>
+          <td>
+            <input type="date" placeholder="Enter DOB" formControlName="dob" id="dob" />
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Job Tile</label><br /></td>
+          <td><input type="text" placeholder="Enter job title" formControlName="title" id="title" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <label>Date of Joining</label><br /></td>
+          <td><input type="date" placeholder="Enter DOJ" formControlName="doj" id="doj" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <label>Place</label><br /></td>
+          <td><input type="text" placeholder="Enter Place" formControlName="place" id="place" /></td>
+        </tr>
+      </table><br/>
+      </form>
+        <div class="line"></div><br/>
+        <form [formGroup]="salarySlip">
+        <table>
+        <th>
+          Salary Slip :
+        </th>
+        <tr>
+          <td>
+            <label>Basic Pay</label></td>
+          <td><input type="number" placeholder="Enter Basic Pay" formControlName="basic" id="basic" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <label>HRA</label></td>
+          <td><input type="number" placeholder="Enter HRA" formControlName="hra" id="hra" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <label>Medical Allowance</label></td>
+          <td><input type="number" placeholder="Enter Medical Allowance" formControlName="ma" id="ma" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <label>Net Amount</label></td>
+          <td><input type="number" placeholder="Enter Net Amount" formControlName="na" id="na" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <label>Professional Tax</label></td>
+          <td><input type="number" placeholder="Enter Professional Tax" formControlName="pt" id="pt" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <label>Provident Fund</label></td>
+          <td><input type="number" placeholder="Enter Amount" formControlName="pf" id="pf" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <label>Conveyance Allowance</label></td>
+          <td><input type="number" placeholder="Enter Conveyance Allowance" formControlName="conveyance"
+              id="conveyance" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <label>Internet Telephony Reimbursement</label></td>
+          <td><input type="number" placeholder="Enter Amount" formControlName="itr" id="itr" /></td>
+          <br />
+        </tr>
+      </table><br/>
+      <button type="button" style="color: white;font-family: Lato;" (click)="addNewEmployee()">ADD EMPLOYEE</button>
+  </form>
+</div>
+</body>

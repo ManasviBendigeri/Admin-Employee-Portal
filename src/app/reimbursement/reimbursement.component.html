@@ -1,0 +1,31 @@
+<mat-toolbar class="my-toolbar">
+  <span class="logo">
+    <img src ="./assets/images/SurfboardLogo.png" height="4%" width="30%">
+  </span>
+</mat-toolbar>
+
+
+<div class="form-style-10">
+  <h1>Reimbursement Form<span>Ensure you upload the files as per requirement</span></h1>
+
+  <form>
+      <div class="section"><span>1</span>Reimbursement Key</div>
+      <div class="inner-wrap">
+          <input type="text" placeholder="Save with Key" name="id" [(ngModel)]="id">
+          <br><br>
+      <input style="font-size:large;" type="file" (change)="showPreview($event)">
+      <button class = "my-button" (click)="save()">Save</button>
+
+      </div>
+
+      <div class="section"><span>2</span>File View</div>
+      <div class="inner-wrap">
+          <input type="text" name="file" [(ngModel)]="file" placeholder="Enter Unique Search Key">
+          <button class = "my-button2" (click)="view()">View</button>
+
+      </div>
+
+
+  </form>
+  </div>
+

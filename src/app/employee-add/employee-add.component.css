@@ -1,0 +1,56 @@
+body{
+  /*background-image: url("E:\angular\img\office.jpg");
+  background-image: url("E:\angular\img\office.jpg"),linear-gradient(#07262C, #041C23);*/
+  color:#00BBFF;
+  height: 100%;
+  overflow: auto;
+  background-color: linear-gradient(to left,#07262C, #041C23);;
+}
+input{
+  height: 40px;
+  width: 200px;
+  border: 2px solid #00BBFF;
+  border-radius: 1rem;
+  padding:0.5rem;
+  background-color: whitesmoke;
+  font-family: Lato;
+}
+button{
+  border: 2px solid #00BBFF;
+  background-color: #041C23;
+  height: 3rem;
+  width: 18%;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  margin-left: 36%;
+  font-size: 1rem;
+}
+button:hover{
+  background-image: linear-gradient(to left,#00BBFF,#1EDBFF);
+}
+/*.title-bar{
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  box-shadow: 0 4px 10px 0 rgba(10, 10, 10, 0.2);
+}*/
+.container{
+margin-left: 10%;
+height: 100%;
+background-color:  #041C23;
+}
+td {
+  padding: 3%;
+}
+.body{
+  background-color:  #041C23;
+}
+.line{
+width: 90%;
+height: 2px;
+background-color: rgb(169, 213, 241);
+}
+th{
+  font-size: 1.5rem;
+}

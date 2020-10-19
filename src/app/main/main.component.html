@@ -1,0 +1,109 @@
+<mat-toolbar class="my-toolbar">
+  <span class="logo">
+    <img src ="./assets/images/SurfboardLogo.png" height="4%" width="30%">
+  </span>
+
+
+  <button mat-button class="log-out">LogOut</button>
+</mat-toolbar>
+
+<mat-card class="profile-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Surfboard Payments</mat-card-title>
+    <mat-card-subtitle>Employee Card</mat-card-subtitle>
+  </mat-card-header>
+
+  <img mat-card-image src="https://www.pngitem.com/pimgs/m/41-415019_profile-man-male-free-picture-male-avatar-clipart.png" alt="Photo of employee" height="250px" width="100px">
+
+  <mat-card-content>
+
+    <!--<div *ngFor="let employee of employeeArray;">-->
+
+    <!--<h2> {{ id }} </h2>-->
+    <h2>{{email}}</h2>
+
+    <h3>{{id}}</h3>
+
+    <h3>Domain: IT Sector</h3>
+
+  </mat-card-content>
+
+</mat-card>
+
+<mat-card class="card-one">
+
+  <mat-card-actions>
+    <img src="./assets/images/leaveLabel1.png" height="80px" width="80px" style="position: relative;left: 22%;">
+    <button class = "my-button"
+
+     mat-button><a href = '/leaves'>Leaves</a></button>
+  </mat-card-actions>
+
+</mat-card>
+
+<mat-card class="card-two">
+
+  <mat-card-actions>
+    <img src="./assets/images/registerLabel.jpg" height="80px" width="80px" style="position: relative;left: 22%;">
+    <button class = "my-button"
+
+    mat-button><a href = '/search'>Register</a></button>
+  </mat-card-actions>
+
+</mat-card>
+
+<mat-card class="card-three">
+
+  <mat-card-actions>
+    <img src="./assets/images/salaryLabel.jpg" height="80px" width="80px" style="position: relative; left: 22%;">
+    <button class = "my-button"
+
+    mat-button><a href = '/salaryslip'>PaySlips</a></button>
+  </mat-card-actions>
+
+</mat-card>
+
+<mat-card class="card-four">
+  <mat-card-actions>
+    <img src="./assets/images/moneyLabel.jpg" height="80px" width="80px" style="position: relative; left: 22%;">
+    <button class = "my-button"
+
+    mat-button><a href = '/reimbursement'>Rembruisment</a></button>
+  </mat-card-actions>
+
+</mat-card>
+
+
+
+<form  [formGroup] = "OptionMode" class="Option-form" >
+  <mat-card class="my-card">
+
+    <h3>How do you plan to work today?</h3>
+
+  <mat-radio-group class="my-radio" formControlName="option" aria-label="Select an option">
+    <mat-radio-button value="WFH">WFH</mat-radio-button>
+    <mat-radio-button value="Office">Office</mat-radio-button>
+  </mat-radio-group>
+
+  <br>
+  <br>
+
+
+  <input class="my-date" formControlName = "date" matInput type="date">
+
+  <br>
+  <br>
+
+  <button type="submit" (click) = "workMode()" mat-raised-button color="primary">Submit</button>
+
+  </mat-card>
+  </form>
+
+  <a class="timeline" href="/timeline">Weekly Updates</a>
+
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+  </svg>
+
+

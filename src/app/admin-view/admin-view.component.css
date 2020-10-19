@@ -1,0 +1,38 @@
+body{
+  color:#00BBFF;
+  background-color: #041C23;
+  overflow:auto;
+}
+td{
+  padding: 3%;
+}
+th{
+  font-size: 1.5rem;
+}
+.outer-table{
+width: 100%;
+height: 100%;
+padding-left: 5%;
+padding-right: 2%;
+}
+.last-table{
+width: 70%;
+margin-left: 15%;
+margin-top: 0;
+padding: 1%;
+border: 1px solid #00BBFF;
+}
+button{
+cursor: pointer;
+width: 100px;
+height: 30px;
+border: none;
+color: white;
+}
+.no{
+margin-left: 5px;
+background-color: red;
+}
+.yes{
+background-color: seagreen;
+}

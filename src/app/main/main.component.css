@@ -1,0 +1,128 @@
+.my-toolbar{
+  background-color:#041C23;
+}
+
+.profile-card {
+  max-width: 20%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.example-header-image {
+  background-image: url('https://www.pngitem.com/pimgs/m/41-415019_profile-man-male-free-picture-male-avatar-clipart.png');
+  background-size: cover;
+}
+
+.card-one{
+  background-color: #0BDDAC;
+  height: 25%;
+  width: 10%;
+  position: absolute;
+  left: 400px;
+  top: 110px;
+}
+
+.card-two{
+  background-color: #F27C7C;
+  height: 25%;
+  width: 10%;
+  position: absolute;
+  left: 600px;
+  top: 110px;
+}
+
+.card-three{
+  background-color: #817CF2;
+  height: 25%;
+  width: 10%;
+  position: absolute;
+  left: 800px;
+  top: 110px;
+}
+
+.card-four{
+  background-color: #F2C57C;
+  height: 25%;
+  width: 10%;
+  position: absolute;
+  left: 1000px;
+  top: 110px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+.log-out {
+  position: relative;
+  left: 800px;
+  color: #00BBFF;
+
+  font-size: large;
+
+}
+
+
+
+.my-button {
+  height:50px;
+  width:100%;
+  position: relative;
+  right: 5%;
+  text-align: center;
+}
+
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+.my-card {
+  height: 200px;
+  width: 250px;
+  position: absolute;
+  top: 55%;
+  margin-left: 45%;
+  text-align: center;
+  background-color:#00BBFF;
+  color: white;
+  border-radius: 6px;
+  padding: 0.85rem 2.5rem;
+
+}
+
+.my-radio {
+  position: relative;
+  top: 6%;
+}
+
+.my-date {
+  position: relative;
+  top: 2%;
+}
+
+button {
+  position: relative;
+  top: 1%;
+}
+
+h3 {
+  position: relative;
+  top: 5%;
+}
+
+
+.timeline {
+
+  position: absolute;
+  left: 1090px;
+  top: 500px;
+}
+
+.bi {
+  position: absolute;
+  left: 1145px;
+  top: 530px;
+}

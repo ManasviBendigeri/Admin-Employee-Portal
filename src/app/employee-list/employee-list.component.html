@@ -1,0 +1,56 @@
+<body>
+  <h2 style="text-align:center;font-family: Lato;font-weight: bold;margin-top: 2rem;">THE TEAM</h2>
+  <!--<a routerLink="/employeeadd"><button class="add-button" id="split">Add Employee</button></a>-->
+  <a routerLink="/employeeadd"><p class="add">Add Employee <span class="material-icons">add_circle</span></p></a>
+        <mat-grid-list cols="4" rowHeight="82%" rowWidth="100%" style="padding:3%;">
+          <div *ngFor="let employee of employeeArray;">
+          <mat-grid-tile>
+            <div class="card">
+      <mat-card>
+        <!--<mat-card-content>-->
+          <img mat-card-image style="border: 2px solid white;border-radius: 1rem; width: 150px;height: 170px;margin-top: 20px;" src="{{ employee.url }}">
+          <a routerLink="/adminview"><h1 style="font-weight: bold;text-decoration: none;color: #00BBFF;">{{ employee.name }}</h1></a>
+          <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header style="padding: 0;margin: 0;background-color: black;">
+                  <mat-panel-title style="margin-left: 35%;text-decoration: none;" class="view-more">
+                    View More
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="expand-content">
+                 <table>
+                   <tr>
+                     <td class="t-title">Title :</td>
+                     <td>{{ employee.title }}</td>
+                   </tr>
+                   <tr>
+                     <td class="t-title">Email :</td>
+                     <td>{{ employee.email }}</td>
+                   </tr>
+                   <tr>
+                     <td class="t-title">Place :</td>
+                     <td>{{ employee.place }}</td>
+                   </tr>
+                 </table>
+                </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+        <!--</mat-card-content>
+        <p>Title :{{ employee.title }}</p>
+                   <p>Place :{{ employee.place }}</p>
+                   <p>E-mail :{{ employee.email }}</p>-->
+      </mat-card>
+    </div>
+    </mat-grid-tile>
+  </div>
+    </mat-grid-list>
+  </body>
+  <!--
+      <div class="view">
+          <button type="button" class="collapsible">View More</button>
+          <div class="content">
+              <p id="title">Title</p>
+              <p id="place">Place</p>
+          </div>
+      </div>
+  -->

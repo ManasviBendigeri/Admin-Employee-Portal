@@ -1,0 +1,60 @@
+body{
+  background-color: #041C23;
+color:#00BBFF;
+font-family: Lato;
+overflow: auto;
+}
+.add-button{
+border: none;
+margin-left: 80%;
+margin-bottom: 2%;
+width: 10%;
+height: 40px;
+background-color: black;
+color: whitesmoke;
+box-shadow: 0px 4px 4px 0px rgba(10, 10, 10, 0.2);
+cursor: pointer;
+}
+a{
+cursor: pointer;
+}
+button:hover, a:hover {
+opacity: 0.7;
+text-decoration: underline;
+}
+.view-more{
+align-items: center;
+background-color: black;
+color: white;
+width: auto;
+height: auto;
+}
+.active, .collapsible:hover {
+background-color: #555;
+}
+.card{
+width: 70%;
+height: 40%;
+margin-bottom: 10%;
+margin-top:0 ;
+padding-top: 0;
+border: 3px solid #00BBFF;
+border-radius: 1rem;
+text-align: center;
+}
+a:link{
+text-decoration: none;
+}
+.card:hover{
+box-shadow: 5px 5px 10px 10px rgba(246, 247, 248, 0.2);
+}
+.add{
+margin-left: 80%;
+color: #00BBFF;
+}
+.expand-content{
+font-family: Lato;
+}
+.t-title{
+font-weight: bold;
+}

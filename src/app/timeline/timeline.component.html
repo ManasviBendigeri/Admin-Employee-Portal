@@ -1,0 +1,100 @@
+<mat-toolbar class="my-toolbar">
+  <span class="logo">
+    <img src ="./assets/images/SurfboardLogo.png" height="4%" width="30%">
+  </span>
+</mat-toolbar>
+
+<h2>How did you surf through the week?</h2>
+<!--<p>PIPE TODAY:: {{today | date:'dd-MM-yyyy hh:mm:ss a':'+0530'}}</p>
+<p>The week's plan:: {{todaysDataTime}}</p>
+<p>{{tomosDataTime}}</p>-->
+
+<form #timeline = "ngForm" (ngSubmit) = "submit(timeline.value)">
+<h3>Current Week</h3>
+<p class="m" id = "week">{{week}}</p>
+<table>
+
+  <tr>
+
+    <td>
+      <p id = "one" class="my-day">{{yesterday}}-<span>{{month}}</span></p>
+    </td>
+
+    <td>
+      <input ngModel name = "onet" id = "onet" matInput class="my-text"  type="text" placeholder="Monday">
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td>
+      <p class="my-day"  id = "two">{{today}}-<span>{{month}}</span></p>
+    </td>
+
+    <td>
+      <input ngModel name = "twot" id = "twot" matInput class="my-text" type="text" placeholder="Tuesday" >
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td>
+      <p  id = "three" class="my-day">{{today}}-<span>{{month}}</span></p>
+    </td>
+
+    <td>
+      <input ngModel name = "threet" id = "threet" class="my-text" type="text" placeholder="Wednesday" style="top:180px;">
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td>
+      <p id = "four" class="my-day" >{{second}}-<span>{{month}}</span></p>
+    </td>
+
+    <td>
+      <input ngModel name = "fourt" id = "fourt" class="my-text" type="text" placeholder="Thursday" >
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td>
+      <p  id = "five" class="my-day" >{{third}}-<span>{{month}}</span></p>
+    </td>
+
+    <td>
+      <input ngModel name = "fivet" id = "fivet" class="my-text" type="text" placeholder="Friday" >
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td>
+      <p id = "six" class="my-day" >{{forth}}-<span>{{month}}</span></p>
+    </td>
+
+    <td>
+      <input ngModel name = "sixt" id = "sixt" class="my-text" type="text" placeholder="work">
+    </td>
+
+  </tr>
+
+
+
+
+<button type="submit" mat-raised-button color="accent">Record my data</button>
+
+</table>
+</form>
+
+
+
+
+

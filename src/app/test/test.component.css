@@ -1,0 +1,35 @@
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+.my-card {
+  height: 250px;
+  width: 300px;
+  text-align: center;
+  background-color:#00BBFF;
+  color: white;
+  border-radius: 6px;
+  padding: 0.85rem 2.5rem;
+  margin-left: 100px;
+
+}
+
+.my-radio {
+  position: relative;
+  top: 10%;
+}
+
+.my-date {
+  position: relative;
+  top: 10%;
+}
+
+button {
+  position: relative;
+  top: 15%;
+}
+
+h3 {
+  position: relative;
+  top: 8%;
+}

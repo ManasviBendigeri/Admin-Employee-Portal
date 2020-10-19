@@ -1,0 +1,73 @@
+<mat-toolbar class="my-toolbar">
+  <span class="logo">
+    <img src ="./assets/images/SurfboardLogo.png" height="4%" width="30%">
+  </span>
+
+</mat-toolbar>
+
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+
+<!--<div *ngIf="alert"  class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Complaint Registered! You'll hear from us shortly</h4>
+  <button type="button" (click) = "closeAlert()" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>-->
+
+<div *ngIf="alert" class="alert alert-secondary" role="alert">
+  Complaint Registered! You'll hear from us shortly
+  <button type="button" (click) = "closeAlert()" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<mat-card class="my-card">
+
+<mat-card-content>
+  <form [formGroup] = "Register" class="my-form">
+     <mat-form-field class="full-width">
+            <mat-label>Employee ID</mat-label>
+            <input  matInput  placeholder="Employee ID"  name="id" formControlName="id" required>
+         </mat-form-field>
+
+         <br>
+
+         <mat-form-field class="full-width">
+            <mat-label>Employee Name</mat-label>
+            <input  matInput  placeholder="Employee Name" name="name" formControlName="name" required>
+         </mat-form-field>
+
+         <br>
+
+         <mat-form-field class="full-width">
+            <mat-label>Email</mat-label>
+            <input  matInput  placeholder="Email" name="email" formControlName="email">
+       </mat-form-field>
+
+         <br>
+
+
+         <mat-form-field class="full-width">
+            <mat-label>Please tell us your problem</mat-label>
+            <input  matInput  placeholder="Please tell us your problem" name="complaint" formControlName="complaint" required>
+         </mat-form-field>
+
+         <br>
+
+
+  </form>
+
+  <mat-card-actions class="my-button">
+    <button mat-raised-button (click)= "register()" color="accent">REGISTER</button>
+  </mat-card-actions>
+
+</mat-card-content>
+
+</mat-card>
+
+
+
